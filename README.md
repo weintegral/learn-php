@@ -5,7 +5,9 @@
 
 
 ```txt
-
+OBJECT CREATION
+|
+|
 _ __construct() -> triggered when you are trying to create an object
 |
 |
@@ -25,5 +27,7 @@ _ __invoke() -> triggered when you are trying call object as function
 |
 |
 _ __destruct() -> triggered when you are trying to destroy an object
-
+|
+|
+OBJECT DESTRCUTION
 ```
