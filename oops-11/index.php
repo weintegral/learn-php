@@ -3,11 +3,13 @@ require_once 'MySQLConnection.php';
 require_once 'PostgresConnection.php';
 require_once 'sql/MySQLConnection.php';
 
+use MySQL\MySQLConnection as PrimaryMySQLConnection;
+use SQL\MySQL\MySQLConnection as SecondaryMySQLConnection;
 
-$mysql = new MySQL\MySQLConnection();
+$mysql = new PrimaryMySQLConnection();
 echo $mysql->connect();
 
-$mysql2 = new SQL\MySQL\MySQLConnection();
+$mysql2 = new SecondaryMySQLConnection();
 echo $mysql2->connect();
 
 $postgres = new Postgres\PostgresConnection();
