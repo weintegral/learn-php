@@ -30,4 +30,4 @@ $vars = get_class_vars(User::class);
 
 $props = get_object_vars($userObject);
 
-var_dump($props);
+var_dump($isCallable);
